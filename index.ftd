@@ -3,5 +3,9 @@
 
 -- lib.footer-1:
 logo: $assets.files.images.trizwit.jpeg
+facebook: $assets.files.images.facebook.svg
+twitter: $assets.files.images.twitter.svg
+instagram: $assets.files.images.instagram.svg
+linkedin: $assets.files.images.linkedin.svg
 logo-test: TRIZWIT
 

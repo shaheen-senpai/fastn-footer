@@ -1,0 +1,110 @@
+-- import: shaheen-senpai.github.io/fastn-footer/assets
+
+
+
+-- component Category:
+-- ftd.column:
+padding-horizontal.px: 16
+padding-bottom.px: 40
+
+-- ftd.text: CATEGORIES
+margin-bottom.px: 12
+
+-- ftd.text: First Link
+margin-vertical.px: 1
+
+-- ftd.text: Second Link
+margin-vertical.px: 1
+
+-- ftd.text: Third Link
+margin-vertical.px: 1
+
+-- ftd.text: Fourth Link
+margin-vertical.px: 1
+
+-- end: ftd.column
+-- end: Category
+
+
+
+
+
+
+-- component footer-1:
+ftd.image-src logo:
+string logo-test:
+
+
+-- ftd.column:
+width: fill-container
+height: hug-content
+
+
+-- ftd.row:
+width: fill-container
+height: auto
+padding-horizontal.percent: 8
+padding-vertical.px: 16
+background.solid: #80bfff
+
+
+--  ftd.column:
+width.fixed.percent: 25
+
+-- ftd.row:
+
+-- ftd.image:
+src: $footer-1.logo  
+width.fixed.percent: 13
+height: auto 
+border-radius.px: 45
+
+-- ftd.text: $footer-1.logo-test
+role:
+color:
+margin-left.px: 12
+align-self: center
+
+-- end: ftd.row
+
+
+-- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
+margin-top.px: 8
+
+-- end: ftd.column
+
+
+-- ftd.row:
+width: fill-container
+align-content: right
+
+-- Category:
+-- Category:
+-- Category:
+-- Category:
+
+-- end: ftd.row
+
+
+
+-- end: ftd.row
+
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.percent: 10
+padding-vertical.px: 16
+background.solid: #ff1a1a
+
+-- ftd.text: © 2023 trizwit —
+
+-- end: ftd.row
+
+
+
+-- end: ftd.column
+
+
+-- end: footer-1

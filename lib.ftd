@@ -3,24 +3,55 @@
 
 
 -- component Category:
+boolean $is-active-1: false
+boolean $is-active-2: false
+boolean $is-active-3: false
+boolean $is-active-4: false
+
 -- ftd.column:
 padding-horizontal.px: 16
 padding-bottom.px: 40
 
 -- ftd.text: CATEGORIES
+role:
+color: $inherited.colors.border
 margin-bottom.px: 12
 
 -- ftd.text: First Link
+role:
 margin-vertical.px: 1
+color: $inherited.colors.cta-tertiary.hover
+color if {Category.is-active-1}: $inherited.colors.border
+$on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-1, v = false)
+link:
 
 -- ftd.text: Second Link
+role:
 margin-vertical.px: 1
+color: $inherited.colors.cta-tertiary.hover
+color if {Category.is-active-2}: $inherited.colors.border
+$on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-2, v = false)
+link:
 
 -- ftd.text: Third Link
+role:
 margin-vertical.px: 1
+color: $inherited.colors.cta-tertiary.hover
+color if {Category.is-active-3}: $inherited.colors.border
+$on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-3, v = false)
+link:
 
 -- ftd.text: Fourth Link
+role:
 margin-vertical.px: 1
+color: $inherited.colors.cta-tertiary.hover
+color if {Category.is-active-4}: $inherited.colors.border
+$on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-4, v = false)
+link:
 
 -- end: ftd.column
 -- end: Category
@@ -32,6 +63,10 @@ margin-vertical.px: 1
 
 -- component footer-1:
 ftd.image-src logo:
+ftd.image-src facebook:
+ftd.image-src twitter:
+ftd.image-src instagram:
+ftd.image-src linkedin:
 string logo-test:
 
 
@@ -43,25 +78,26 @@ height: hug-content
 -- ftd.row:
 width: fill-container
 height: auto
-padding-horizontal.percent: 8
+padding-horizontal.percent: 10
 padding-vertical.px: 16
-background.solid: #80bfff
+background.solid: $inherited.colors.background.base
 
 
 --  ftd.column:
 width.fixed.percent: 25
+height: auto
 
 -- ftd.row:
 
 -- ftd.image:
 src: $footer-1.logo  
-width.fixed.percent: 13
+width.fixed.percent: 17
 height: auto 
 border-radius.px: 45
 
 -- ftd.text: $footer-1.logo-test
 role:
-color:
+color: $inherited.colors.border
 margin-left.px: 12
 align-self: center
 
@@ -69,6 +105,8 @@ align-self: center
 
 
 -- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
+role:
+color:
 margin-top.px: 8
 
 -- end: ftd.column
@@ -77,6 +115,7 @@ margin-top.px: 8
 -- ftd.row:
 width: fill-container
 align-content: right
+spacing.fixed.px: 16
 
 -- Category:
 -- Category:
@@ -86,9 +125,7 @@ align-content: right
 -- end: ftd.row
 
 
-
 -- end: ftd.row
-
 
 
 -- ftd.row:
@@ -96,15 +133,43 @@ width: fill-container
 height: hug-content
 padding-horizontal.percent: 10
 padding-vertical.px: 16
-background.solid: #ff1a1a
+background.solid: $inherited.colors.cta-tertiary.hover
 
--- ftd.text: © 2023 trizwit —
+-- ftd.text: © 2023 Trizwit —
+role:
+color:
+width: fill-container
+
+-- ftd.row:
+height: fill-container
+align-content: right
+
+-- ftd.image:
+src: $footer-1.facebook
+width.fixed.percent: 2
+
+-- ftd.image:
+src: $footer-1.twitter
+width.fixed.percent: 2
+margin-left.px: 12
+
+-- ftd.image:
+src: $footer-1.instagram
+width.fixed.percent: 2
+margin-left.px: 12
+
+-- ftd.image:
+src: $footer-1.linkedin
+width.fixed.percent: 2
+margin-left.px: 12
+
+-- end: ftd.row
+
 
 -- end: ftd.row
 
 
 
 -- end: ftd.column
-
 
 -- end: footer-1

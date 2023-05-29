@@ -163,11 +163,13 @@ width.fixed.percent: 2
 src: $footer-1.twitter
 width.fixed.percent: 2
 margin-left.px: 12
+margin-top.px: 3
 
 -- ftd.image:
 src: $footer-1.instagram
 width.fixed.percent: 2
 margin-left.px: 12
+margin-top.px: 3
 
 -- ftd.image:
 src: $footer-1.linkedin
@@ -287,11 +289,13 @@ width.fixed.percent: 2
 src: $footer-2.twitter
 width.fixed.percent: 2
 margin-left.px: 12
+margin-top.px: 3
 
 -- ftd.image:
 src: $footer-2.instagram
 width.fixed.percent: 2
 margin-left.px: 12
+margin-top.px: 3
 
 -- ftd.image:
 src: $footer-2.linkedin
@@ -380,11 +384,14 @@ width.fixed.percent: 3
 src: $footer-3.twitter
 width.fixed.percent: 3
 margin-left.px: 12
+margin-top.px: 3
+
 
 -- ftd.image:
 src: $footer-3.instagram
 width.fixed.percent: 3
 margin-left.px: 12
+margin-top.px: 3
 
 -- ftd.image:
 src: $footer-3.linkedin

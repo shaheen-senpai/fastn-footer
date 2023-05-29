@@ -332,7 +332,7 @@ width: fill-container
 height: hug-content
 padding-horizontal.percent: 10
 padding-vertical.px: 16
-background.solid: #99ffcc
+background.solid: $inherited.colors.cta-tertiary.hover
 
 -- ftd.row:
 width.fixed.percent:60

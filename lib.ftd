@@ -13,12 +13,12 @@ padding-horizontal.px: 16
 padding-bottom.px: 40
 
 -- ftd.text: CATEGORIES
-role:
+role: $inherited.types.label-large
 color: $inherited.colors.border
 margin-bottom.px: 12
 
 -- ftd.text: First Link
-role:
+role: $inherited.types.label-small
 margin-vertical.px: 1
 color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-1}: $inherited.colors.border
@@ -27,7 +27,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-1, v = false)
 link:
 
 -- ftd.text: Second Link
-role:
+role: $inherited.types.label-small
 margin-vertical.px: 1
 color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-2}: $inherited.colors.border
@@ -36,7 +36,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-2, v = false)
 link:
 
 -- ftd.text: Third Link
-role:
+role: $inherited.types.label-small
 margin-vertical.px: 1
 color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-3}: $inherited.colors.border
@@ -45,7 +45,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-3, v = false)
 link:
 
 -- ftd.text: Fourth Link
-role:
+role: $inherited.types.label-small
 margin-vertical.px: 1
 color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-4}: $inherited.colors.border
@@ -107,7 +107,7 @@ height: auto
 border-radius.px: 45
 
 -- ftd.text: $footer-1.logo-test
-role:
+role: $inherited.types.copy-regular
 color: $inherited.colors.border
 margin-left.px: 12
 align-self: center
@@ -116,8 +116,8 @@ align-self: center
 
 
 -- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
-role:
-color:
+role: $inherited.types.copy-small
+color: $inherited.colors.cta-tertiary.hover
 margin-top.px: 8
 
 -- end: ftd.column
@@ -147,8 +147,8 @@ padding-vertical.px: 16
 background.solid: $inherited.colors.cta-tertiary.hover
 
 -- ftd.text: © 2023 Trizwit —
-role:
-color:
+role: $inherited.types.copy-small
+color: $inherited.colors.scrim
 width: fill-container
 
 -- ftd.row:
@@ -247,7 +247,7 @@ height: auto
 border-radius.px: 45
 
 -- ftd.text: $footer-2.logo-test
-role:
+role: $inherited.types.copy-regular
 color: $inherited.colors.border
 margin-left.px: 12
 align-self: center
@@ -256,8 +256,8 @@ align-self: center
 
 
 -- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
-role:
-color:
+role: $inherited.types.copy-small
+color: $inherited.colors.cta-tertiary.hover
 margin-top.px: 8
 
 -- end: ftd.column
@@ -273,8 +273,8 @@ padding-vertical.px: 16
 background.solid: $inherited.colors.cta-tertiary.hover
 
 -- ftd.text: © 2023 Trizwit —
-role:
-color:
+role: $inherited.types.copy-small
+color: $inherited.colors.scrim
 width: fill-container
 
 -- ftd.row:
@@ -339,7 +339,7 @@ padding-vertical.px: 16
 background.solid: $inherited.colors.cta-tertiary.hover
 
 -- ftd.row:
-width.fixed.percent:60
+width.fixed.percent:63
 height: fill-container
 align-content: left
 padding-right.px: 10
@@ -353,7 +353,7 @@ height: auto
 border-radius.px: 45
 
 -- ftd.text: $footer-3.logo-test
-role:
+role: $inherited.types.copy-regular
 color: $inherited.colors.border
 margin-left.px: 12
 align-self: center
@@ -366,8 +366,8 @@ height: fill-container
 margin-left.px: 10
 
 -- ftd.text: © 2023 Trizwit —
-role:
-color:
+role: $inherited.types.copy-small
+color: $inherited.colors.scrim
 align-self: center
 
 -- end: ftd.row

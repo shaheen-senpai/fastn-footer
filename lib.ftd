@@ -308,3 +308,91 @@ margin-left.px: 12
 -- end: ftd.column
 
 -- end: footer-2
+
+
+
+
+
+
+
+
+
+
+-- component footer-3:
+ftd.image-src logo:
+ftd.image-src facebook:
+ftd.image-src twitter:
+ftd.image-src instagram:
+ftd.image-src linkedin:
+string logo-test:
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.percent: 10
+padding-vertical.px: 16
+background.solid: #99ffcc
+
+-- ftd.row:
+width.fixed.percent:60
+height: fill-container
+align-content: left
+padding-right.px: 10
+border-right-width.px: 3
+border-right-color: $inherited.colors.border
+
+-- ftd.image:
+src: $footer-3.logo  
+width.fixed.percent: 30
+height: auto 
+border-radius.px: 45
+
+-- ftd.text: $footer-3.logo-test
+role:
+color: $inherited.colors.border
+margin-left.px: 12
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+margin-left.px: 10
+
+-- ftd.text: © 2023 Trizwit —
+role:
+color:
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.row:
+height: fill-container
+align-content: right
+
+-- ftd.image:
+src: $footer-3.facebook
+width.fixed.percent: 3
+
+-- ftd.image:
+src: $footer-3.twitter
+width.fixed.percent: 3
+margin-left.px: 12
+
+-- ftd.image:
+src: $footer-3.instagram
+width.fixed.percent: 3
+margin-left.px: 12
+
+-- ftd.image:
+src: $footer-3.linkedin
+width.fixed.percent: 3
+margin-left.px: 12
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: footer-3
